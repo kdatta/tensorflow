@@ -363,6 +363,10 @@ class Conv2DOp : public BinaryOp<T> {
             << ", stride_cols = " << stride_cols
             << ", out_depth = " << out_depth;
 
+    std::cout << "KUSHAL: "
+              << "In Conv2D"
+              << "\n";
+
     // If there is nothing to compute, return.
     if (out_shape.num_elements() == 0) {
       return;
